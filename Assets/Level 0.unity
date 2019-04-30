@@ -400,7 +400,6 @@ MonoBehaviour:
   maxX: 2
   minX: -2
   startButton: {fileID: 1421093631}
-  selectLevelButton: {fileID: 1421093630}
 --- !u!135 &483583129
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -965,7 +964,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selector
       value: 
-      objectReference: {fileID: 1421093630}
+      objectReference: {fileID: 0}
     - target: {fileID: 8451638658659843254, guid: e6fb833fec8a04597ba918f25effacb0,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1065,11 +1064,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8345311338782576575, guid: e0993f81425904036a507e0a8bed5154,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8345311338782576570, guid: e0993f81425904036a507e0a8bed5154,
         type: 3}
@@ -1181,28 +1175,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 483583128}
-    - target: {fileID: 8345311340462592667, guid: e0993f81425904036a507e0a8bed5154,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExecuteGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 8345311339905067303, guid: e0993f81425904036a507e0a8bed5154,
-        type: 3}
-      propertyPath: m_Text
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1130336429, guid: e0993f81425904036a507e0a8bed5154, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 36.69995
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0993f81425904036a507e0a8bed5154, type: 3}
---- !u!1 &1421093630 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8345311339225217776, guid: e0993f81425904036a507e0a8bed5154,
-    type: 3}
-  m_PrefabInstance: {fileID: 1421093629}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1421093631 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8345311340462592669, guid: e0993f81425904036a507e0a8bed5154,

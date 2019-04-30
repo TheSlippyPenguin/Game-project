@@ -55,11 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BezierPathCreator\Core\Editor\Helper\MouseUtility.cs" />
-     <Compile Include="Assets\BezierPathCreator\Core\Editor\Helper\PathHandle.cs" />
-     <Compile Include="Assets\BezierPathCreator\Core\Editor\Helper\ScreenSpacePolyLine.cs" />
-     <Compile Include="Assets\BezierPathCreator\Core\Editor\PathEditor.cs" />
-     <Compile Include="Assets\BezierPathCreator\Examples\Scripts\Editor\PathSceneToolEditor.cs" />
+     <Compile Include="Assets\PathCreator\PathCreator\Examples\Scripts\Editor\PathSceneToolEditor.cs" />
      <Compile Include="Assets\Scripts\Editor\ProceduralMeshEditor.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Damien/Documents/Unity Files/Ball/Rolling pas sky/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -651,6 +647,14 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{1989D19D-CE0E-ED25-393C-19EC045E42B4}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="PathCreator.csproj">
+      <Project>{E261B15A-71FE-419A-B9D8-316F182B4BF9}</Project>
+      <Name>PathCreator</Name>
+    </ProjectReference>
+    <ProjectReference Include="PathCreatorEditor.csproj">
+      <Project>{655CDE85-8772-9E4F-8F58-313F4C097FD9}</Project>
+      <Name>PathCreatorEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

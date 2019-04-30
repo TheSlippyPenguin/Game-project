@@ -6,6 +6,7 @@ public class OndulationController : MonoBehaviour
 {
     public float sideSpeed = 50f;
     public float XIncrement = 1;
+    public float moveSpeed;
     public float maxX, minX;
     public GameObject startButton;
     public GameObject selectLevelButton;
@@ -13,12 +14,14 @@ public class OndulationController : MonoBehaviour
 
     bool hasGameStarted = false;
 
-    private void Start()
+    
+
+    private void Awake()
     {
         startButton.SetActive(true);
         selectLevelButton.SetActive(true);
         PathFollower script = followScript.GetComponent<PathFollower>();
-        script.enabled = false;
+        script.speed = 0;
     }
 
     public void ExecuteGame()
@@ -27,7 +30,7 @@ public class OndulationController : MonoBehaviour
         hasGameStarted = true;
         startButton.SetActive(false);
         PathFollower script = followScript.GetComponent<PathFollower>();
-        script.enabled = true;
+        script.speed = moveSpeed;
         //selectLevelButton.SetActive(false);
     }
 

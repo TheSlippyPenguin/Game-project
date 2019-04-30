@@ -11,14 +11,14 @@ ScriptsOnlyBuild:
     - OndulationController
     - PathCreation.Examples.PathFollower
     - PathCreation.Examples.RoadMeshCreator
-    - PathCreation.PathCreator
-    - PathCreationEditor.GlobalDisplaySettings
     - PisteQuiOndule
     - PlayerController
     - ProceduralMesh
     - Show
     - WaveSystem
     - setTargetFramerate
+    PathCreator.dll:
+    - PathCreation.PathCreator
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
@@ -664,15 +664,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9804}
     - Class: 114
-      Script: {instanceID: 9966}
-    - Class: 114
       Script: {instanceID: 9988}
     - Class: 114
-      Script: {instanceID: 10108}
-    - Class: 114
       Script: {instanceID: 10142}
-    - Class: 114
-      Script: {instanceID: 10210}
     - Class: 114
       Script: {instanceID: 10246}
     - Class: 114
@@ -681,6 +675,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10388}
     - Class: 114
       Script: {instanceID: 10428}
+    - Class: 114
+      Script: {instanceID: 12232}
+    - Class: 114
+      Script: {instanceID: 12236}
+    - Class: 114
+      Script: {instanceID: 12248}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1170,22 +1170,10 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 4a654db7abe35c23188f2a635d960973
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PathCreation.Examples
-    className: PathFromObjects
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Analytics.Editor.dll
     namespaceName: UnityEditor.Analytics
     className: AnalyticsEventTrackerEditor
-  - hash:
-      serializedVersion: 2
-      Hash: ff928cbf46e620727f73669c90dfb8db
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PathCreation.Examples
-    className: RoadMeshCreator
   - hash:
       serializedVersion: 2
       Hash: cffc88e0e14ff651169ef6dd8c710c9d
@@ -1200,22 +1188,10 @@ ScriptsOnlyBuild:
     className: CameraScript
   - hash:
       serializedVersion: 2
-      Hash: 1309bd5af74a43fd3c5f7ce64bcf2824
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PathCreationEditor
-    className: GlobalDisplaySettings
-  - hash:
-      serializedVersion: 2
       Hash: 3f8d7b92a6be3c715e55d5cfa7cc8384
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
-  - hash:
-      serializedVersion: 2
-      Hash: 2023515a447b9089d205e8fe2ea2e7ac
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PathCreation.Examples
-    className: PathFollower
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1224,7 +1200,7 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: e59a511ce8c54f8a7937202d721b4ba0
+      Hash: 799a87de5b679cdf08768358dfac2deb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PisteQuiOndule
@@ -1272,12 +1248,6 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: f77df83faa6096ee28752e696aa1d2b9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PathCreation
-    className: PathCreator
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1302,7 +1272,7 @@ ScriptsOnlyBuild:
     className: WaveSystem
   - hash:
       serializedVersion: 2
-      Hash: 8f7d7a3ce4ea43d2e5f138ea6123ea97
+      Hash: 6a6fd6ac42a31429a627d297a16f25cc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OndulationController
@@ -1360,6 +1330,42 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 5c6bcb9e1d0bb7a2109ab10c402c7f12
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PathCreation.Examples
+    className: PathFollower
+  - hash:
+      serializedVersion: 2
+      Hash: ff928cbf46e620727f73669c90dfb8db
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PathCreation.Examples
+    className: RoadMeshCreator
+  - hash:
+      serializedVersion: 2
+      Hash: 6fec7c744d5d231ca229073a67cba0b1
+    assemblyName: PathCreator.dll
+    namespaceName: PathCreation
+    className: GlobalDisplaySettings
+  - hash:
+      serializedVersion: 2
+      Hash: f77df83faa6096ee28752e696aa1d2b9
+    assemblyName: PathCreator.dll
+    namespaceName: PathCreation
+    className: PathCreator
+  - hash:
+      serializedVersion: 2
+      Hash: 4a654db7abe35c23188f2a635d960973
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PathCreation.Examples
+    className: PathFromObjects
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: isPersistent
   platform: 13
   scenePathNames:
   - Assets/Level 0.unity
@@ -1369,4 +1375,4 @@ ScriptsOnlyBuild:
   - Assets/Level 4.unity
   - Assets/Level 5.unity
   - Assets/Piste Ondulante.unity
-  playerPath: C:/Users/Damien/Desktop/Game Build/devbuild_level5update.apk
+  playerPath: C:/Users/Damien/Desktop/Game Build/devbuild_proceduralmapupdate.apk

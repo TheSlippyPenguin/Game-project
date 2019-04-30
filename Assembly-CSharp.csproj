@@ -55,32 +55,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BezierPathCreator\Core\Scripts\Objects\BezierPath.cs" />
-     <Compile Include="Assets\BezierPathCreator\Core\Scripts\Objects\EndOfPathInstruction.cs" />
-     <Compile Include="Assets\BezierPathCreator\Core\Scripts\Objects\GlobalDisplaySettings.cs" />
-     <Compile Include="Assets\BezierPathCreator\Core\Scripts\Objects\MinMax3D.cs" />
-     <Compile Include="Assets\BezierPathCreator\Core\Scripts\Objects\PathCreator.cs" />
-     <Compile Include="Assets\BezierPathCreator\Core\Scripts\Objects\PathCreatorData.cs" />
-     <Compile Include="Assets\BezierPathCreator\Core\Scripts\Objects\PathSpace.cs" />
-     <Compile Include="Assets\BezierPathCreator\Core\Scripts\Objects\VertexPath.cs" />
-     <Compile Include="Assets\BezierPathCreator\Core\Scripts\Utility\CubicBezierUtility.cs" />
-     <Compile Include="Assets\BezierPathCreator\Core\Scripts\Utility\MathUtility.cs" />
-     <Compile Include="Assets\BezierPathCreator\Core\Scripts\Utility\VertexPathUtility.cs" />
-     <Compile Include="Assets\BezierPathCreator\Examples\Scripts\PathFollower.cs" />
-     <Compile Include="Assets\BezierPathCreator\Examples\Scripts\PathFromObjects.cs" />
-     <Compile Include="Assets\BezierPathCreator\Examples\Scripts\PathSceneTool.cs" />
-     <Compile Include="Assets\BezierPathCreator\Examples\Scripts\RoadMeshCreator.cs" />
-     <Compile Include="Assets\PisteQuiOndule.cs" />
+     <Compile Include="Assets\PathCreator\PathCreator\Examples\Scripts\PathFollower.cs" />
+     <Compile Include="Assets\PathCreator\PathCreator\Examples\Scripts\PathFromObjects.cs" />
+     <Compile Include="Assets\PathCreator\PathCreator\Examples\Scripts\PathSceneTool.cs" />
+     <Compile Include="Assets\PathCreator\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\CollisionDetection.cs" />
      <Compile Include="Assets\Scripts\ColorManager.cs" />
      <Compile Include="Assets\Scripts\FallDetection.cs" />
      <Compile Include="Assets\Scripts\FPSCounter.cs" />
+     <Compile Include="Assets\Scripts\isPersistent.cs" />
      <Compile Include="Assets\Scripts\JumpPad.cs" />
      <Compile Include="Assets\Scripts\LevelComplete.cs" />
      <Compile Include="Assets\Scripts\LoadSceneFromButton.cs" />
      <Compile Include="Assets\Scripts\MaterialUpdater.cs" />
      <Compile Include="Assets\Scripts\OndulationController.cs" />
+     <Compile Include="Assets\Scripts\PisteQuiOndule.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\ProceduralMesh.cs" />
      <Compile Include="Assets\Scripts\setTargetFramerate.cs" />
@@ -642,6 +632,16 @@
  <Reference Include="Boo.Lang">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="PathCreator.csproj">
+      <Project>{E261B15A-71FE-419A-B9D8-316F182B4BF9}</Project>
+      <Name>PathCreator</Name>
+    </ProjectReference>
+    <ProjectReference Include="PathCreatorEditor.csproj">
+      <Project>{655CDE85-8772-9E4F-8F58-313F4C097FD9}</Project>
+      <Name>PathCreatorEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
