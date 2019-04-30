@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &868801903845306361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868801903845306363}
+  - component: {fileID: 868801903845306360}
+  m_Layer: 0
+  m_Name: Material Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &868801903845306363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868801903845306361}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &868801903845306360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868801903845306361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9182d92d344664e9d8f3984c44b788af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  piste: {fileID: 2100000, guid: 1eaa1a042f392459d9c31f7abb4f00d2, type: 2}
+  obstacle: {fileID: 2100000, guid: e0dd8e2603c214bd391cb831cf95d91e, type: 2}
+  lumiere: {fileID: 0}
+  bg: {fileID: 0}
+  presets:
+  - fond: {fileID: 21300000, guid: 6a5eda4ef859649c3b14454ba5e0a9c1, type: 3}
+    couleurPiste: {r: 0.17254902, g: 0.454902, b: 0.36078432, a: 1}
+    couleurObstacle: {r: 0.3207547, g: 0.1269793, b: 0.0045389733, a: 1}
+    couleurDuSoleil: {r: 0.98823535, g: 1, b: 0.77647066, a: 1}
+    intensiteLumiere: 1.9
+  - fond: {fileID: 21300000, guid: a9324b9fbbb5745399253df0738a0f67, type: 3}
+    couleurPiste: {r: 0.6, g: 0.36078432, b: 0.28627452, a: 1}
+    couleurObstacle: {r: 1, g: 0.230614, b: 0, a: 1}
+    couleurDuSoleil: {r: 1, g: 0.78099734, b: 0.740566, a: 1}
+    intensiteLumiere: 1.5
+  - fond: {fileID: 21300000, guid: b6a2dcab2238d45d59d3cd77ca248970, type: 3}
+    couleurPiste: {r: 0.5803922, g: 0.73333335, b: 0.8745099, a: 1}
+    couleurObstacle: {r: 0.6784314, g: 0.82745105, b: 0.9686275, a: 1}
+    couleurDuSoleil: {r: 1, g: 0.8000001, b: 0.6431373, a: 0}
+    intensiteLumiere: 2
+  - fond: {fileID: 21300000, guid: a3f9ed44dbe300e428b2099ce9da1745, type: 3}
+    couleurPiste: {r: 0.2405215, g: 0.1214845, b: 0.24528301, a: 1}
+    couleurObstacle: {r: 0.78823537, g: 0.7294118, b: 0.9921569, a: 1}
+    couleurDuSoleil: {r: 0.78823537, g: 0.7294118, b: 0.9921569, a: 0}
+    intensiteLumiere: 1.35
+  - fond: {fileID: 21300000, guid: 169746c598eab984dabd8dec739f2f91, type: 3}
+    couleurPiste: {r: 0.8745099, g: 0.8745099, b: 0.5372549, a: 1}
+    couleurObstacle: {r: 0.20185119, g: 0.49479765, b: 0.6792453, a: 1}
+    couleurDuSoleil: {r: 0.9960785, g: 1, b: 0.7019608, a: 0}
+    intensiteLumiere: 1.74
+  - fond: {fileID: 21300000, guid: a210ace2004debb42817d227a74f17f0, type: 3}
+    couleurPiste: {r: 0.6117647, g: 0.97647065, b: 0.5254902, a: 1}
+    couleurObstacle: {r: 0.34117648, g: 0.62352943, b: 0.5686275, a: 1}
+    couleurDuSoleil: {r: 1, g: 0.9960785, b: 0.73333335, a: 0}
+    intensiteLumiere: 1.24
+  - fond: {fileID: 21300000, guid: 7b1368775832fab48b351d5a15a42bf8, type: 3}
+    couleurPiste: {r: 0.8773585, g: 0.48420256, b: 0.7446044, a: 1}
+    couleurObstacle: {r: 0, g: 0.83921576, b: 0.8352942, a: 1}
+    couleurDuSoleil: {r: 0.9725491, g: 0.73333335, b: 1, a: 0}
+    intensiteLumiere: 1.53
