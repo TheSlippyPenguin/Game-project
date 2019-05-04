@@ -43,6 +43,17 @@
         "**/*.meta":true,
         "**/*.prefab":true,
         "**/*.unity":true,
+        "**/*.preset":true,
+        "**/*.gitattributes":true,
+        "**/*.asmdef":true,
+        "**/*.csproj":true,
+        "**/*.sln":true,
+        "**/*.collabignore":true,
+        "**/*.anim":true,
+        "**/*.controller":true,
+        "**/*.physicMaterial":true,
+        "**/*.ttf":true,
+        "**/*.otf":true,
         "build/":true,
         "Build/":true,
         "Library/":true,
@@ -51,6 +62,10 @@
         "Obj/":true,
         "ProjectSettings/":true,
         "temp/":true,
-        "Temp/":true
+        "Temp/":true,
+        "Assets/Animations/":true,
+        "Assets/Graphics/":true,
+        "Assets/Miscelleanous/":true,
+        "Assets/Prefabs/":true
     }
 }
